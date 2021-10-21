@@ -15,7 +15,7 @@
       });
 
       function main() {
-        let a = [10, 50, 30];
+        let a = [10, "50", 30.3];
         a.push(4.5);
         a.unshift("zero");
         let msg="";
@@ -27,7 +27,7 @@
           let s = a.shift();
           let msg2="";
           for(let i=0; i<a.length; i++) {
-            msg2 += i + ":" + a[i] + "<br>";
+            msg2 += i + ":" + (a[i]+2) + "<br>";
           }
             msg2 += "p:" + p + "<br>";
             msg2 += "s:" + s + "<br>";
